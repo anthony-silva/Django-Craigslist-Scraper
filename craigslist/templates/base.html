@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<div class="container">
+
+  <br>
+
+  <title>Craigslist Web Scraper</title>
+
+  <head style='text-align:center;'>
+    <h1>Craigslist Web Scraper</h1>
+  </head>
+
+  <br><br>
+
+  <body>
+
+
+  <form method="get" action="/craigslist/results/">
+    <div style="text-align:left;">
+  	{{ form.as_p }}
+    </div>
+    <div style='text-align:center;'>
+      <button class="btn btn-info" type="submit">Submit</button>
+    </div>
+  </form>
+
+
+  <br><br><br>
+
+  {% block results %}
+
+  {% endblock results %}
+
+  </body>
+
+</div>
